@@ -8,7 +8,7 @@
     display: grid;
     background-color: #571110;
     grid-template-areas: 
-    "header nav nav"
+    "nav nav nav"
     "section section section"
     "article article aside"
     "footer footer footer";
@@ -30,27 +30,33 @@ header a{
     text-decoration: none;
     color: white;
 }
-nav.navegador{
+.navbar.navbar-expand-lg.bg-light{
+    display: flex;
+    justify-content: center;
+}
+.navbar-nav{
+    gap: 20px;
+}
+nav.navbar{
     background:linear-gradient(#9E4A49, #571110 );
     color: white;
     grid-area: nav;
     display: grid;
-    align-items: center;
+    align-items: flex-end;
 }
-.navegador ul{
+nav.navbar ul{
     list-style: none;
     display: flex;
     justify-content: space-evenly;
 }
-.navegador ul li a{
+nav.navbar ul li a{
     text-decoration: none;
     background-color: #522626;
     color: white;
     padding: 2vh 2vw;
-    border-radius: 20%;
     transition: all 1s;
 }
-.navegador ul li a:hover{
+nav.navbar ul li a:hover{
     background-color: #D9A6A5;
 }
 section{ 
