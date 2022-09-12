@@ -1,0 +1,60 @@
+@media (max-width: 844px){
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+  .contenedorPantalla{
+    display: flex;
+    flex-direction: column;
+    }
+
+  header{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+    }
+
+  nav{
+    display: flex;
+    justify-content: center;
+    font-size: x-small;
+    }
+
+  article{
+    display: flex;
+    flex-direction: column;
+
+    .ofertas{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .oferta{
+        width: 60%;
+       } 
+
+      img{
+        width: 100%;
+        }
+    }    
+   }     
+
+  aside{
+    display: none;
+    }
+  section{
+    display: none;
+  }  
+
+  footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .pieDePag, .navegador2{
+      display: none;
+     } 
+   }   
+}      
