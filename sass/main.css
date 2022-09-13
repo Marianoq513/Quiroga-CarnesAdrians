@@ -204,20 +204,6 @@ footer {
   text-decoration: none;
 }
 
-.familia {
-  display: flex;
-  flex-direction: column;
-  padding: 3%;
-  align-items: center;
-  text-align: center;
-}
-.familia .tituloFamilia {
-  color: #9E4A49;
-}
-.familia .subtituloFamilia {
-  text-decoration: underline;
-}
-
 .fotoLocales {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -289,4 +275,52 @@ article.carrusel {
   footer .pieDePag, footer .navegador2 {
     display: none;
   }
+}
+.pageContacto {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  padding: 3%;
+  gap: 3%;
+}
+.pageContacto .formasContacto {
+  border: solid 2px black;
+  border-radius: 20%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.pageContacto .formasContacto:hover {
+  background-color: #9E4A49;
+  transition: all 1s;
+}
+.pageContacto .formulario {
+  border: solid 2px black;
+  border-radius: 20%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2%;
+}
+.pageContacto .formulario:hover {
+  background-color: #9E4A49;
+  transition: all 1s;
+}
+
+.familia {
+  display: flex;
+  flex-direction: column;
+  padding: 3%;
+  align-items: center;
+  text-align: center;
+}
+.familia .tituloFamilia {
+  color: #9E4A49;
+}
+.familia .subtituloFamilia {
+  text-decoration: underline;
+  color: white;
+}
+.familia p {
+  color: white;
 }/*# sourceMappingURL=main.css.map */

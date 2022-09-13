@@ -1,0 +1,18 @@
+.familia{
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    align-items: center;
+    text-align: center;
+  
+    .tituloFamilia{
+      color: #9E4A49;
+     } 
+    .subtituloFamilia{
+      text-decoration: underline;
+      color: white;
+     } 
+     p{
+        color: white;
+     }
+  }

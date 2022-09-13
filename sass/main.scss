@@ -208,20 +208,7 @@ footer{
     }
    } 
 }
-.familia{
-  display: flex;
-  flex-direction: column;
-  padding: 3%;
-  align-items: center;
-  text-align: center;
 
-  .tituloFamilia{
-    color: #9E4A49;
-   } 
-  .subtituloFamilia{
-    text-decoration: underline;
-   } 
-}
 .fotoLocales{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -246,3 +233,5 @@ article.carrusel{
   height: auto;
 }
 @import "responsive";
+@import "contact";
+@import "familia";
