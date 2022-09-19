@@ -13,6 +13,14 @@
   grid-template-rows: auto auto auto auto;
 }
 
+.contenedorPantallaPages {
+  display: grid;
+  background-color: #571110;
+  grid-template-areas: "nav nav nav" "section section section" "article article article" "main main main" "footer footer footer";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+}
+
 header {
   display: none;
   justify-content: center;
@@ -221,8 +229,7 @@ footer {
 }
 
 article.carrusel {
-  margin-top: 20px;
-  width: 95vw;
+  margin: 20px 5px;
   height: auto;
 }
 
@@ -282,6 +289,7 @@ article.carrusel {
   color: white;
   padding: 3%;
   gap: 3%;
+  justify-content: space-around;
 }
 .pageContacto .formasContacto {
   border: solid 2px black;
@@ -306,6 +314,30 @@ article.carrusel {
   background-color: #9E4A49;
   transition: all 1s;
 }
+.pageContacto .horarios {
+  border: solid 2px black;
+  border-radius: 20%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2%;
+}
+.pageContacto .horarios:hover {
+  background-color: #9E4A49;
+  transition: all 1s;
+}
+.pageContacto .pedidos {
+  border: solid 2px black;
+  border-radius: 20%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2%;
+}
+.pageContacto .pedidos:hover {
+  background-color: #9E4A49;
+  transition: all 1s;
+}
 
 .familia {
   display: flex;
@@ -323,4 +355,25 @@ article.carrusel {
 }
 .familia p {
   color: white;
+}
+
+.ubicaciones {
+  color: white;
+  text-align: center;
+}
+
+.carnicerias {
+  width: 100vw;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.carnicerias div {
+  width: 30%;
+  height: auto;
+}
+.carnicerias div iframe {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
