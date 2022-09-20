@@ -5,6 +5,40 @@
   font-family: sans-serif;
 }
 $colorfondo:#571110;
+$red-social:(
+  fb: blue,
+  tw: skyblue,
+  ig: violet,
+  tk: purple,
+  kw: orange,
+);
+@each $nombre, $valor in $red-social {
+  .icon-#{$nombre} {
+    background-color: $valor;
+    width: 2rem;
+    padding: 0.5rem;
+  }
+}
+$ubicaciones:(
+  gu: green,
+  lh: yellow,
+  gc: blue,
+  lv:red,
+);
+@each $nombre, $valor in $ubicaciones {
+  .ubi-#{$nombre} {
+    background-color: $valor;
+  }
+}
+@mixin btn {
+  display: inline-block;
+  padding: 0.5rem;
+  background-color: #D9A6A5;
+  border: solid black;
+  text-decoration: none;
+  color: white;
+}
+
 .contenedorPantalla{
   display: grid;
   background-color: $colorfondo;
@@ -239,12 +273,8 @@ footer{
     }    
    }   
 }
-article.carrusel{
-  margin: 20px 5px;
-  height: auto;
-}
-@import "responsive";
+@import "location";
 @import "contact";
 @import "familia";
-@import "location";
 @import "products";
+@import "responsive";

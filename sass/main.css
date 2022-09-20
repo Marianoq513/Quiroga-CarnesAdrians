@@ -5,6 +5,52 @@
   font-family: sans-serif;
 }
 
+.icon-fb {
+  background-color: blue;
+  width: 2rem;
+  padding: 0.5rem;
+}
+
+.icon-tw {
+  background-color: skyblue;
+  width: 2rem;
+  padding: 0.5rem;
+}
+
+.icon-ig {
+  background-color: violet;
+  width: 2rem;
+  padding: 0.5rem;
+}
+
+.icon-tk {
+  background-color: purple;
+  width: 2rem;
+  padding: 0.5rem;
+}
+
+.icon-kw {
+  background-color: orange;
+  width: 2rem;
+  padding: 0.5rem;
+}
+
+.ubi-gu {
+  background-color: green;
+}
+
+.ubi-lh {
+  background-color: yellow;
+}
+
+.ubi-gc {
+  background-color: blue;
+}
+
+.ubi-lv {
+  background-color: red;
+}
+
 .contenedorPantalla {
   display: grid;
   background-color: #571110;
@@ -228,9 +274,87 @@ footer {
   grid-row: 2/4;
 }
 
-article.carrusel {
-  margin: 20px 5px;
+.carrusel {
+  width: 95%;
+  margin: 1rem auto;
+}
+
+.ubicaciones {
+  color: white;
+  text-align: center;
+}
+
+.carnicerias {
+  width: 100vw;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.carnicerias div {
+  width: 30%;
   height: auto;
+}
+.carnicerias div iframe {
+  width: 100%;
+}
+
+.pageContacto {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  padding: 3%;
+  gap: 3%;
+  justify-content: space-around;
+}
+.pageContacto .formasContacto, .pageContacto .formulario {
+  border: solid 0.1rem black;
+  border-radius: 10%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0 0.5rem;
+}
+.pageContacto .formasContacto:hover, .pageContacto .formulario:hover {
+  background-color: #9E4A49;
+  transition: all 1s;
+}
+.familia {
+  display: flex;
+  flex-direction: column;
+  padding: 3%;
+  align-items: center;
+  text-align: center;
+}
+.familia .tituloFamilia {
+  color: #9E4A49;
+}
+.familia .subtituloFamilia {
+  text-decoration: underline;
+  color: white;
+}
+.familia p {
+  color: white;
+}
+
+.articuloProductos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.articuloProductos .productos {
+  color: white;
+}
+
+main a.boton {
+  display: inline-block;
+  padding: 0.5rem;
+  background-color: #D9A6A5;
+  border: solid black;
+  text-decoration: none;
+  color: white;
 }
 
 @media (max-width: 844px) {
@@ -282,98 +406,4 @@ article.carrusel {
   footer .pieDePag, footer .navegador2 {
     display: none;
   }
-}
-.pageContacto {
-  display: flex;
-  flex-direction: row;
-  color: white;
-  padding: 3%;
-  gap: 3%;
-  justify-content: space-around;
-}
-.pageContacto .formasContacto {
-  border: solid 2px black;
-  border-radius: 20%;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-}
-.pageContacto .formasContacto:hover {
-  background-color: #9E4A49;
-  transition: all 1s;
-}
-.pageContacto .formulario {
-  border: solid 2px black;
-  border-radius: 20%;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: 2%;
-}
-.pageContacto .formulario:hover {
-  background-color: #9E4A49;
-  transition: all 1s;
-}
-.pageContacto .horarios {
-  border: solid 2px black;
-  border-radius: 20%;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: 2%;
-}
-.pageContacto .horarios:hover {
-  background-color: #9E4A49;
-  transition: all 1s;
-}
-.pageContacto .pedidos {
-  border: solid 2px black;
-  border-radius: 20%;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: 2%;
-}
-.pageContacto .pedidos:hover {
-  background-color: #9E4A49;
-  transition: all 1s;
-}
-
-.familia {
-  display: flex;
-  flex-direction: column;
-  padding: 3%;
-  align-items: center;
-  text-align: center;
-}
-.familia .tituloFamilia {
-  color: #9E4A49;
-}
-.familia .subtituloFamilia {
-  text-decoration: underline;
-  color: white;
-}
-.familia p {
-  color: white;
-}
-
-.ubicaciones {
-  color: white;
-  text-align: center;
-}
-
-.carnicerias {
-  width: 100vw;
-  color: white;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-around;
-}
-.carnicerias div {
-  width: 30%;
-  height: auto;
-}
-.carnicerias div iframe {
-  width: 100%;
 }/*# sourceMappingURL=main.css.map */

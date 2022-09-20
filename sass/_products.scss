@@ -1,0 +1,14 @@
+.articuloProductos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    .productos{
+        color: white;
+    }
+}
+main{
+    a.boton{
+        @include btn
+    }
+}
