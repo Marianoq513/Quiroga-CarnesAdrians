@@ -77,4 +77,23 @@
       }
     }
  }
+ article.productos{
+  div.filtro{
+    display: flex;
+    width: auto;
+    border-radius: 0%;
+  }
+  div.seccionProductos{
+    width: auto;
+    border-radius: 0%;
+    .tarjetas{
+      flex-direction: column;
+      border-radius: 0;
+      .tarjetaProducto{
+        width: 100%;
+
+      }
+    }
+  }
+ }
 }      

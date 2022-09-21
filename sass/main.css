@@ -274,6 +274,86 @@ footer {
   grid-row: 2/4;
 }
 
+article.productos {
+  display: flex;
+}
+article.productos div.filtro {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-color: #9E4A49;
+  border: solid #D9A6A5;
+  border-radius: 10%;
+  margin: 1rem;
+  text-align: center;
+  padding: 0.5rem;
+  width: 20%;
+  height: 10rem;
+}
+article.productos div.filtro a {
+  text-decoration: none;
+  color: white;
+}
+article.productos div.seccionProductos {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-color: #9E4A49;
+  border: solid #D9A6A5;
+  border-radius: 10%;
+  margin: 1rem;
+  padding: 0.5rem;
+  width: 70%;
+  text-align: center;
+}
+article.productos div.seccionProductos .tarjetas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+article.productos div.seccionProductos .tarjetas h3 {
+  width: 100%;
+}
+article.productos div.seccionProductos .tarjetas .tarjetaProducto {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  border: solid #571110;
+  border-radius: 10%;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+article.productos div.seccionProductos .tarjetas .tarjetaProducto img {
+  width: 10rem;
+  border: #571110;
+  border-radius: 20%;
+}
+article.productos div.seccionProductos .tarjetas .tarjetaProducto button {
+  display: inline-block;
+  padding: 0.5rem;
+  background-color: #D9A6A5;
+  border: solid #9E4A49;
+  text-decoration: none;
+  color: black;
+}
+
+main a.boton {
+  transition: all 1s;
+  display: inline-block;
+  padding: 0.5rem;
+  background-color: #D9A6A5;
+  border: solid #9E4A49;
+  text-decoration: none;
+  color: black;
+}
+main a.boton:hover {
+  background-color: #9E4A49;
+  border: solid #D9A6A5;
+}
+
 .carrusel {
   width: 95%;
   margin: 1rem auto;
@@ -335,25 +415,6 @@ footer {
   color: white;
 }
 .familia p {
-  color: white;
-}
-
-.articuloProductos {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-.articuloProductos .productos {
-  color: white;
-}
-
-main a.boton {
-  display: inline-block;
-  padding: 0.5rem;
-  background-color: #D9A6A5;
-  border: solid black;
-  text-decoration: none;
   color: white;
 }
 
@@ -424,5 +485,21 @@ main a.boton {
     display: flex;
     flex-direction: column;
     margin: auto;
+  }
+  article.productos div.filtro {
+    display: flex;
+    width: auto;
+    border-radius: 0%;
+  }
+  article.productos div.seccionProductos {
+    width: auto;
+    border-radius: 0%;
+  }
+  article.productos div.seccionProductos .tarjetas {
+    flex-direction: column;
+    border-radius: 0;
+  }
+  article.productos div.seccionProductos .tarjetas .tarjetaProducto {
+    width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */

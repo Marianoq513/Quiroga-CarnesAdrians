@@ -34,9 +34,9 @@ $ubicaciones:(
   display: inline-block;
   padding: 0.5rem;
   background-color: #D9A6A5;
-  border: solid black;
+  border: solid #9E4A49;
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 .contenedorPantalla{
@@ -273,8 +273,8 @@ footer{
     }    
    }   
 }
+@import "products";
 @import "location";
 @import "contact";
 @import "familia";
-@import "products";
 @import "responsive";
