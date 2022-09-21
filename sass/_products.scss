@@ -6,16 +6,23 @@ article.productos{
         color: white;
         background-color: #9E4A49; 
         border: solid #D9A6A5;
-        border-radius: 10%;  
         margin: 1rem;
         text-align: center;
         padding: 0.5rem;
         width: 20%;
-        height: 10rem;
-        a{
-          text-decoration: none; 
-          color: white;
-        }
+        height: 15rem;
+        position: sticky;
+        top: 1rem;
+        li{
+            background-color: $colorfondo;
+            margin-bottom: 1rem;
+            a{
+                width: 100%;
+            text-decoration: none; 
+            color: white;
+            background-color: $colorfondo
+            }
+        }    
     }
     div.seccionProductos{
         display: flex;
@@ -23,7 +30,6 @@ article.productos{
         color: white;
         background-color: #9E4A49;
         border: solid #D9A6A5;
-        border-radius: 10%;
         margin: 1rem;
         padding: 0.5rem;
         width: 70%;
@@ -51,21 +57,10 @@ article.productos{
                     border: $colorfondo;
                     border-radius: 20%;
                 }
-                button{
+                a{
                     @include btn;
                 }
             }
         }
     }
-}
-main{
-    a.boton{
-        transition: all 1s;
-        @include btn;
-        &:hover{
-         background-color: #9E4A49;
-         border: solid #D9A6A5;;
-        }
-    }
-
 }
