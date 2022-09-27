@@ -59,6 +59,11 @@ article.productos{
                 }
                 a{
                     @include btn;
+                    transition: all 1s;
+                    &:hover{
+                        background-color: $colorfondo;
+                        color: white;
+                    }
                 }
             }
         }

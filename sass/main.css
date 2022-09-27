@@ -169,6 +169,19 @@ article .subtitulo {
 article .card {
   height: 100%;
 }
+article .card .card-body a {
+  display: inline-block;
+  padding: 0.5rem;
+  background-color: #D9A6A5;
+  border: solid #9E4A49;
+  text-decoration: none;
+  color: black;
+  z-index: 2;
+}
+article .card .card-body a:hover {
+  background-color: #571110;
+  color: white;
+}
 
 aside {
   background-color: #571110;
@@ -245,6 +258,13 @@ footer {
   flex-direction: column;
   align-items: center;
 }
+.conozcanos .logos {
+  display: flex;
+}
+.conozcanos .logos a img {
+  width: 2rem;
+  margin: 0 1rem;
+}
 
 .contactenos {
   display: flex;
@@ -256,6 +276,7 @@ footer {
 }
 .contactenos ul li a {
   text-decoration: none;
+  color: white;
 }
 
 .fotoLocales {
@@ -346,6 +367,11 @@ article.productos div.seccionProductos .tarjetas .tarjetaProducto a {
   text-decoration: none;
   color: black;
   z-index: 2;
+  transition: all 1s;
+}
+article.productos div.seccionProductos .tarjetas .tarjetaProducto a:hover {
+  background-color: #571110;
+  color: white;
 }
 
 .carrusel {
@@ -388,12 +414,24 @@ article.productos div.seccionProductos .tarjetas .tarjetaProducto a {
   text-align: center;
   display: flex;
   flex-direction: column;
-  padding: 0 0.5rem;
+  padding: 1rem 1rem;
 }
 .pageContacto .formasContacto:hover, .pageContacto .formulario:hover {
   background-color: #9E4A49;
   transition: all 1s;
 }
+.pageContacto .formulario {
+  text-align: start;
+}
+.pageContacto .formulario input {
+  width: 100%;
+  margin: 0.5rem;
+}
+.pageContacto .formulario textarea {
+  width: 100%;
+  margin: 0.5rem;
+}
+
 .familia {
   display: flex;
   flex-direction: column;
@@ -402,7 +440,7 @@ article.productos div.seccionProductos .tarjetas .tarjetaProducto a {
   text-align: center;
 }
 .familia .tituloFamilia {
-  color: #9E4A49;
+  color: white;
 }
 .familia .subtituloFamilia {
   text-decoration: underline;
@@ -410,6 +448,22 @@ article.productos div.seccionProductos .tarjetas .tarjetaProducto a {
 }
 .familia p {
   color: white;
+}
+
+main {
+  width: 100vw;
+}
+main h3 {
+  text-align: center;
+  color: white;
+}
+main .carousel {
+  width: 90%;
+  height: 30rem;
+  margin: auto;
+}
+main .carousel img {
+  height: 30rem;
 }
 
 @media (max-width: 844px) {
@@ -455,11 +509,19 @@ article.productos div.seccionProductos .tarjetas .tarjetaProducto a {
   }
   footer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
   }
-  footer .pieDePag, footer .navegador2 {
+  footer .pieDePag {
     display: none;
+  }
+  footer .navegador2 ul {
+    display: flex;
+    flex-direction: row;
+    gap: 0.2rem;
+  }
+  footer .navegador2 ul a {
+    padding: 0.5rem;
   }
   .pageContacto {
     display: flex;

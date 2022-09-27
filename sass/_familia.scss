@@ -6,7 +6,7 @@
     text-align: center;
   
     .tituloFamilia{
-      color: #9E4A49;
+      color: white;
      } 
     .subtituloFamilia{
       text-decoration: underline;
@@ -15,4 +15,19 @@
      p{
         color: white;
      }
+}
+main{
+  h3{
+    text-align: center;
+    color: white;
+  }
+  width: 100vw;
+  .carousel{
+    width: 90%;
+    height: 30rem;
+    margin: auto;
+    img{
+      height: 30rem;
+    }
+  }
 }
